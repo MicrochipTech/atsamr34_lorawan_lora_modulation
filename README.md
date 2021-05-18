@@ -7,6 +7,18 @@
 </a>
 </p>
 
+## ⚠ Disclaimer
+
+<p><span style="color:red"><b>
+Subject to your compliance with these terms, you may use Microchip software and any derivatives exclusively with Microchip products. It is your responsibility to comply with third party license terms applicable to your use of third party software (including open source software) that may accompany Microchip software.<br>
+THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.<br>
+IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THE FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+</span></p></b>
+
+> Interact with your peers about this software in [LoRa Forum](https://www.microchip.com/forums/f512.aspx).
+
+## Abstract
+
 **Based on LoRaWAN Mote Application generated from ASFv3, this sample code demonstrates the coexistence of a LoRaWAN Application and a pure radio communication between 2x ATSAMR34 Xplained Pro boards using LoRa modulation.**
 
 For more information on Microchip ATSAMR34 LoRa SiP devices, visit Microchip webpage: </br>
@@ -16,7 +28,7 @@ https://www.microchip.com/design-centers/wireless-connectivity/low-power-wide-ar
 
 ## Get a Microchip ATSAMR34 Xplained Pro evaluation kit
 
-The ATSAMR34 Xplained Pro evaluation kit is a hardware platform used to evaluate the ATSAMR34 Low Power LoRa® Sub-GHz SiP. It is supported by Atmel Studio 7.0 IDE and a collection of sample codes are available from Advanced Software Framework (ASFv3) since the 3.44.0 release.
+The ATSAMR34 Xplained Pro evaluation kit is a hardware platform used to evaluate the ATSAMR34 Low Power LoRa® Sub-GHz SiP. It is supported by Microchip Studio 7.0 IDE and a collection of sample codes are available from Advanced Software Framework (ASFv3) since the 3.44.0 release.
 The Xplained Pro MCU series evaluation kit includes an on-board Embedded Debugger (EDBG), and no external tools are necessary to program or debug the ATSAMR34.
 The kit offers a set of features that enable the user to get started with the ATSAMR34 Low Power LoRa® Sub-GHz SiP peripherals right away, and to understand how to integrate the device in your own design.
 The ATSAMR34 Xplained Pro kit contains the following items:
@@ -27,26 +39,12 @@ The ATSAMR34 Xplained Pro kit contains the following items:
 
 ## Software
 
-- Download and install Atmel Studio 7.0 IDE. </br>
-https://www.microchip.com/mplab/avr-support/atmel-studio-7
-
-- Open Atmel Studio 7.0 IDE. </br>
-- Then, you need Advanced Software Framework (ASFv3) v3.44.0 release or upper release. </br>
-Install ASFv3 as an extension to Atmel Studio from the menu: Tools -> Extensions and Updates …
-- Once the installation is complete, you must restart Atmel Studio. </br>
+- Download and install [Microchip Studio 7.0 IDE](https://www.microchip.com/mplab/microchip-studio)
+- Open Microchip Studio 7.0 IDE.
+- From **Tools - > Extensions and updates**, install Advanced Software Framework (ASFv3) v3.44.0 release or upper release.
+- Restart Microchip Studio
 - Download and install a serial terminal program like Tera Term. </br>
 https://osdn.net/projects/ttssh2/releases/
-
-Note: ASFv3 is an MCU software library providing a large collection of embedded software for AVR® and SAM flash MCUs and Wireless devices. ASFv3 is configured by the ASF Wizard in Atmel Studio 7.0 (installed as an extension to Studio). ASFv3 is also available as a standalone (.zip) with the same content as Studio extension (https://www.microchip.com/mplab/avr-support/advanced-software-framework).
-
-Important:
-Until the next Atmel Studio IDE release, you have to manually install the Device Part Pack for developing with SAMR34/R35 on Atmel Studio 7.0 IDE.
-(all products released in between IDE releases of Atmel Studio should be manually added by user to develop applications).
-- Go to Tools -> Device Pack Manager </br>
-- Check for Updates </br>
-- Search for SAMR34 and click install </br>
-- Repeat the same for SAMR35 </br>
-- Restart Atmel Studio 7.0 IDE </br>
 
 ## Hardware Setup
 
@@ -126,7 +124,7 @@ For peer-to-peer communication, the sample code configures the radio with the fo
 
 ## Scheduler
 
-- Start Atmel Studio 7 IDE
+- Start Microchip Studio 7 IDE
 - Open this project
 - The LoRaWAN Mote Application is using a priority based scheduler to handle the application tasks. 
 - Open src/enddevice_demo.h to observe the definition of the tasks IDs and tasks State.
@@ -517,7 +515,7 @@ static void processJoinAndSend(void)
 
 ## Provisioning the LoRaWAN activation parameters
 
-- Start Atmel Studio 7 IDE
+- Start Microchip Studio 7 IDE
 - Open this project
 - To activate your ATSAMR34 Xplained Pro board on a LoRa Network Server, you will be using the OTAA activation procedure. The OTAA method requires the following parameters to be embedded into the LoRaWAN Mote Application:
   </br>- AppEUI : Copy/Paste from your Network Server
@@ -546,9 +544,9 @@ conf_board.h file:
 
 ## Tutorial
 
-- Start Atmel Studio 7 IDE
+- Start Microchip Studio 7 IDE
 - Open this project
-- From the Atmel Studio menu, go to: Build -> Build Solution
+- From the Microchip Studio menu, go to: Build -> Build Solution
 - Flash the firmware on the two ATSAMR34 Xplained Pro boards
 - Open two Tera Term sessions with 115200 bps 8N1 configuration.
 - Reset the two boards
