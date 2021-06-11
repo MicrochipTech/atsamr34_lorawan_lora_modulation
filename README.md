@@ -1,4 +1,6 @@
 # ATSAMR34_LORAWAN_LORA_MODULATION
+<img src="Doc/IoT-Made-Easy-Logo.png" width=100>
+
 > “Wireless Made Easy!" - Adding LoRa Peer-to-Peer Connection to an existing LoRaWAN Application
 
 <p>
